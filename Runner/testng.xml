@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="2">
+<listeners>
+<listener class-name="com.nagarro.qa.listeners.ExtentReportsListeners"></listener>
+</listeners>
+<test  name="Test on Chrome">
+   <parameter name="browser" value="Chrome"></parameter>
+    <classes>
+      <class name="com.nagarro.qa.testcases.LaunchPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
