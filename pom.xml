@@ -35,7 +35,7 @@
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.6.1</version>
-    <scope>test</scope>
+    <scope>compile</scope>
 </dependency>
 <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
 <dependency>
@@ -65,11 +65,11 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0-M5</version>
-        <configuration>
-        <suiteXmlFiles>
-        <suiteXmlFile>testng.xml</suiteXmlFile>
-        </suiteXmlFiles>
-        </configuration>
+       <configuration>
+            <suiteXmlFiles>
+                <suiteXmlFile>Runner/testng.xml</suiteXmlFile>
+            </suiteXmlFiles>
+        </configuration>  
       </plugin>
     </plugins>
   </build>
